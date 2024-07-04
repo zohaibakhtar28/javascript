@@ -1,0 +1,22 @@
+Default JS Behaviour :-
+JS is synchronous. One after the other code execution.
+It's a single threaded Language. JS Engine is Single Threaded
+
+execution contect :-
+
+one line at at a time
+
+Blocking Code vs Non Blocking Code:-
+
+Blocks the flow of the program. -> Read File Sync
+Don't blocks the flow of the program. ->Read File Async
+
+JS Engine -> Memory Heap and CALL Stack.
+Call stack has all fxn calls if it has anything like settimeout or setInterval it goes to runtime Environment -> node OR weB API. It puts them in a task queue and then executed .
+
+
+fetch()  has a high priority so quese a high priority task queue.
+
+
+
+

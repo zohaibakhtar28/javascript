@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="river"
+                    src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="prayer"
+                    src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><a style="color: black" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    //Click Event Listeners.
+
+    // const Images = document.getElementById('images')
+    // Images.addEventListener('click', (e)=>{
+    //    // alert("Images Clicked!")
+    //    console.log("images Clicked");
+    // }, false)
+
+    // //e is an event object, has many functions.
+    // //events - type, timestamp, preventDefault, target, srcElement
+
+    // //clientX, clientY, screenX, screenY, altkey, ctrlkey, shiftkey.
+
+    // //event propagation ->  bubbling. log-> Owl is clicked, IMages is clicked when owl is clicked
+
+    // document.getElementById('owl').addEventListener('click', (e)=>{
+    //     console.log("Owl Clicked!");
+    //     e.stopPropagation(); //Stops bubbling
+    // }, false)
+
+
+    // document.getElementById('google').addEventListener('click', (e) => {
+    //     e.preventDefault() // prevents default behavior
+    // })
+
+    document.querySelector('#images').addEventListener('click', function(e) {
+        console.log(e.target); // gives ki kisse ara hai 
+        //console.log(e.target.parentNode); // gives ki kisse ara hai uska parent
+        if(e.target.tagName === 'IMG')
+        {
+            console.log(e.target.id);
+        }// target ka tagname deta hai
+       // let removeIt = e.target.parentNode
+
+      //  removeIt.remove();// removes li of the target img
+
+    })
+
+</script>
+
+</html>
