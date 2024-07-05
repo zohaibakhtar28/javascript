@@ -1,0 +1,6 @@
+Promise object represent an eventual completion and failure . Ex - Cryptographic
+
+3 States of promise -
+1.) Pending
+2.) Fulfill
+3.) Rejected
